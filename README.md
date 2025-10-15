@@ -74,10 +74,11 @@ gcloud config list account
 
 📌 3. Set Your GCP Project and Zone/Region
 ```
-gcloud config set project <YOUR_PROJECT_ID>
+gcloud config set project <YOUR_PROJECT_ID>  #(Replace YOUR_PROJECT_ID with your actual GCP project ID)
+
+
 gcloud config set compute/zone us-central1-a   # Or any zone you prefer
 
-(Replace YOUR_PROJECT_ID with your actual GCP project ID)
 ```
 
 
@@ -116,6 +117,7 @@ gcloud container clusters delete veera--zone us-central1-a
 ```
 
 ---
+
 
 
 
