@@ -106,6 +106,10 @@ gcloud container clusters get-credentials veera
 ```
 kubectl get nodes
 ```
+# run the ``` loadbalmncer-service.yaml``` placed on this repo just run and acces the application throgh loadbalncer ip
+`1``
+kubectl apply -f loadbalancer-service.yaml
+```
 To delete the cluster
 ```
 gcloud container clusters delete veera--zone us-central1-a
@@ -113,10 +117,7 @@ gcloud container clusters delete veera--zone us-central1-a
 
 ---
 
-If you'd like, I can also:
 
-- Add headings and sections to explain each step more clearly.
-- Convert the steps into an executable shell script with safety checks.
-- Create a Windows-friendly PowerShell variant.
+
 
 
