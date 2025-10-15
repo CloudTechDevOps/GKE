@@ -2,7 +2,7 @@
 
 > Note: These commands are for Debian/Ubuntu-based systems and require sudo/root access.
 
-```bash
+
 #🧰 Step 1: Remove any broken repository entries
 ```
 sudo rm -f /etc/apt/sources.list.d/kubernetes.list
@@ -61,7 +61,7 @@ Run this in your VM terminal:
 gcloud --version
 kubectl version
 ```
-📌 2. Authenticate gcloud (if needed)
+📌 2. Authenticate gcloud (if needed)  (optional)
 
 If you didn't use a service account or need user login:
 ```
@@ -90,7 +90,7 @@ gcloud services enable container.googleapis.com
 
 👉 Option A: Standard Cluster (manual node management)
 ```
-gcloud container clusters create my-cluster \
+gcloud container clusters create veera \
   --num-nodes=3 \
   --enable-ip-alias
 
@@ -101,16 +101,14 @@ Once the cluster is created, configure kubectl:
 
 For Standard Cluster:
 ```
-gcloud container clusters get-credentials my-cluster
+gcloud container clusters get-credentials veera
 ```
-###############################
 ```
 kubectl get nodes
 ```
-##################################
-
-
-gcloud container clusters delete veera --zone us-central1-a
+To delete the cluster
+```
+gcloud container clusters delete veera--zone us-central1-a
 ```
 
 ---
@@ -120,4 +118,5 @@ If you'd like, I can also:
 - Add headings and sections to explain each step more clearly.
 - Convert the steps into an executable shell script with safety checks.
 - Create a Windows-friendly PowerShell variant.
+
 
