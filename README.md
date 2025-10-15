@@ -48,6 +48,9 @@ sudo apt install -y google-cloud-sdk-gke-gcloud-auth-plugin
 ## Install kubectl
 ```
 sudo apt-get install kubectl
+
+sudo apt update && apt install -y vim
+
 ```
 ##  Then activate it:
 ```
@@ -117,6 +120,7 @@ gcloud container clusters delete veera--zone us-central1-a
 ```
 
 ---
+
 
 
 
