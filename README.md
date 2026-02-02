@@ -2,7 +2,6 @@
 
 > Note: These commands are for Debian/Ubuntu-based systems and require sudo/root access.
 
-
 #🧰 Step 1: Remove any broken repository entries
 ```
 sudo rm -f /etc/apt/sources.list.d/kubernetes.list
@@ -105,7 +104,9 @@ Once the cluster is created, configure kubectl:
 
 For Standard Cluster:
 ```
-gcloud container clusters get-credentials veera
+gcloud container clusters get-credentials veera \
+  --location us-central1-a
+
 ```
 ```
 kubectl get nodes
@@ -120,6 +121,7 @@ gcloud container clusters delete veera--zone us-central1-a
 ```
 
 ---
+
 
 
 
